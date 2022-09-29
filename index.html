@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:300,400,500,700&display=swap"
-    rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:300,400,500,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./index.css">
-    <link
-    href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:300,400,500,700&display=swap"
-    rel="stylesheet"
-    />
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
-    rel="stylesheet"
-    />
-    <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"
-    ></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
     <title>Registration Student DataBase | AEC</title>
 </head>
-<body style="display: flex; align-items: center; height: 1100px; background-image:var(--ambrosia)">
+
+<body style="display: flex; align-items: center; height: 1200px; background-image:var(--ambrosia)">
     <div class="container" id="before">
         <h2 style="text-decoration:underline;">Student Registration</h2>
         <h2 style="font-weight: 900;">Asansol Engineering College</h2>
         <hr />
+        <div class="container1">DEMO TEXT</div>
         <br />
-        Name:&nbsp; <input type="text" maxlength="50" size="50" name="name" id="name" required placeholder="Enter your name :)"/> <br /><br />
-        Mobile Number:&nbsp; <input type="text" maxlength="10" minlength="10" size="10" name="telephone" id="telephone" required placeholder="Enter your mobile number."/> <br /><br />
-        Email Id:&nbsp; <input type="email" name="email" id="email" required placeholder="Enter your email address."/> <br /><br />
-       University RollNo: <input maxlength="11" size="11" type="text" name="RollNo" id="roll" required placeholder="Enter full university roll no."/> <br /><br />
-          Department: <input type="text" name="gender" id="gender" required placeholder="Enter your department. (i.e. Information Technology)"/> <br /><br />
-          Semester: <input type="text" maxlength="1" size="1" name="semester" id="semester" required placeholder="Enter your current semester. (i.e. 3rd , 4th)"/> <br /><br />
-          Address: <input type="text" name="Address" id="address" required placeholder="Enter your current full address :)"/> <br /><br />
-         <button class="btn btn-black" id="insert" onclick="ShowDiv()">Insert</button>
-      <br />
-      <br>
-      </div>
-      <div style="display:none;" class="submit-block" id="after">
-                <img src="https://upload.wikimedia.org/wikipedia/en/d/d4/Asansol_Engineering_College_Logo.png?20191105070654" alt="" srcset="">
-                <p>Thank You For submitting this form :)</p>
-      </div>
-      <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+        Name:&nbsp; <input type="text" maxlength="50" size="50" name="name" id="name" required
+            placeholder="Enter your name :)" /> <br /><br />
+        Mobile Number:&nbsp; <input type="text" maxlength="10" minlength="10" size="10" name="telephone" id="telephone"
+            required placeholder="Enter your mobile number." /> <br /><br />
+        Email Id:&nbsp; <input type="email" name="email" id="email" required placeholder="Enter your email address." />
+        <br /><br />
+        University RollNo: <input maxlength="11" size="11" type="text" name="RollNo" id="roll" required
+            placeholder="Enter full university roll no." /> <br /><br />
+        Department: <input type="text" name="gender" id="gender" required
+            placeholder="Enter your department. (i.e. Information Technology)" /> <br /><br />
+        Semester: <input type="text" maxlength="1" size="1" name="semester" id="semester" required
+            placeholder="Enter your current semester. (i.e. 3rd , 4th)" /> <br /><br />
+        Address: <input type="text" name="Address" id="address" required
+            placeholder="Enter your current full address :)" /> <br /><br />
+        <button class="btn btn-black" id="insert" onclick="ShowDiv()">Submit</button>
+        <br />
+        <br>
+    </div>
+    <div style="display:none;" class="submit-block" id="after">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d4/Asansol_Engineering_College_Logo.png?20191105070654"
+            alt="" srcset="">
+        <p>Thank You For submitting this form :)</p>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
 
 
-      <script src="./firebase.js"></script>
-    
-      <script src="./register.js"></script>
+    <script src="./firebase.js"></script>
+
+    <script src="./register.js"></script>
 </body>
+
 </html>
