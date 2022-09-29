@@ -1,11 +1,14 @@
-var rollV, nameV, genderV, addressV;
+var rollV, nameV, telephoneV,emailV, genderV, semV, addressV;
 
 function readFom() {
   rollV = document.getElementById("roll").value;
   nameV = document.getElementById("name").value;
+  telephoneV = document.getElementById("telephone").value;
+  emailV = document.getElementById("email").value;
   genderV = document.getElementById("gender").value;
+  semV = document.getElementById("semester").value;
   addressV = document.getElementById("address").value;
-  console.log(rollV, nameV, addressV, genderV);
+  console.log(rollV, nameV, telephoneV, addressV, genderV);
 }
 
 document.getElementById("insert").onclick = function () {
@@ -17,12 +20,27 @@ document.getElementById("insert").onclick = function () {
     .set({
       rollNo: rollV,
       name: nameV,
+      telephone: telephoneV,
+      email: emailV,
       gender: genderV,
+      semester: semV,
       address: addressV,
     });
-  alert("Data Inserted");
+   alert("Data Inserted");
   document.getElementById("roll").value = "";
   document.getElementById("name").value = "";
+  document.getElementById("telephone").value = "";
+  document.getElementById("email").value = "";
   document.getElementById("gender").value = "";
+  document.getElementById("semester").value = "";
   document.getElementById("address").value = "";
 };
+
+var before, after;
+
+before = document.getElementById("before");
+after = document.getElementById("after").style.display="none";
+function ShowDiv() {
+  document.getElementById("before").style.display = "none";
+  document.getElementById("after").style.display = "block";
+}
